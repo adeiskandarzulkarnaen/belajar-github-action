@@ -19,3 +19,5 @@ jobs:
           echo NEXTAUTH_SECRET=inisecret > .env
           echo NEXT_PUBLIC_API=http://localhost >> .env
           ls -al
+
+          cat .env
