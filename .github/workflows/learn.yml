@@ -9,17 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      # - name: Checkout
+      #   uses: actions/checkout@v4
       - name: Script
         run: |
-          echo "Saya berada di direcotry:"
           pwd
-          touch .env
-          echo NEXTAUTH_SECRET=inisecret > .env
-          echo NEXT_PUBLIC_API=http://localhost >> .env
           ls -al
-
-          cat .env
-          node --version
-          docker --version
