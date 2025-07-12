@@ -13,5 +13,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Script
         run: |
-          echo "Hello world \n"
-          echo "Saya belajar github action"
+          echo "Hello world"
+          pwd
