@@ -13,5 +13,9 @@ jobs:
         uses: actions/checkout@v4
       - name: Script
         run: |
-          echo "Hello world"
+          echo "Saya berada di direcotry:"
           pwd
+          touch .env
+          echo NEXTAUTH_SECRET=inisecret > .env
+          echo NEXT_PUBLIC_API=http://localhost >> .env
+          ls -al
