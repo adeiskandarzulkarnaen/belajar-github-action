@@ -9,12 +9,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # - name: Checkout
-      #   uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Script
         run: |
           pwd
           ls -al
           cd ..
+          pwd
           ls -al
-          
+
