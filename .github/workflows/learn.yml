@@ -9,13 +9,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Script
+      - name: create txt
+        run: |
+          echo "Hello world" > note.txt
+          pwd
+          ls -al
+          cat note.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: my-artifact
+          path: ./note.txt
+      - name: test
         run: |
           pwd
           ls -al
-          cd ..
-          pwd
-          ls -al
+
 
