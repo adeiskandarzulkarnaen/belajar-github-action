@@ -21,3 +21,6 @@ jobs:
           ls -al
 
           cat .env
+          where node
+          node --version
+          docker --version
