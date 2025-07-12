@@ -1,0 +1,17 @@
+name: Learn Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Script
+        run: |
+          echo "Hello world \n"
+          echo "Saya belajar github action"
